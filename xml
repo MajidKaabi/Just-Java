@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="8sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity :"
+        android:layout_marginRight="10sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20sp"
+        android:textColor="#235547"
+        android:textAllCaps="true"
+        android:layout_marginTop="58sp"
+        android:layout_alignParentTop="true"
+         />
+
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/quantity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:onClick="increment"
+        android:text="+"
+        />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="58sp"
+        android:paddingRight="50sp"
+        android:paddingLeft="8sp"
+        android:layout_toRightOf="@id/quantity"
+        />
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/quantity"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="107dp"
+        android:onClick="decrement"
+        android:text="-"
+        />
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="Price"
+        android:textAllCaps="true"
+        android:layout_marginTop="16sp"
+        android:layout_above="@id/quantity_text_view"
+        />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0$"
+        android:layout_marginTop="50sp"
+        android:textColor="#EF6C00"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/price"
+        android:layout_below="@id/quantity"
+        android:layout_marginLeft="9sp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price :"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#EF6C00"
+        android:layout_below="@id/quantity"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="50sp"
+        />
+
+    <TextView
+        android:id="@+id/One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:text="( A Cup of Coffee is 5$ )"
+        />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="submitClear"
+        android:text="Reset"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/arab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="One Million Arab Coders"
+        android:textSize="23sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Android Developer"
+        android:textColor="#66234d20"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
